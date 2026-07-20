@@ -8,6 +8,6 @@
 This repository contains my solutions to XXXX of the problems of the ASMBits Assembly problem set.<br>
 
 ## Contributors
-Michele Missiroli - <michelemissi.05@gmail.com>
+Michele Missiroli
 
 username:  @michelemi (XX/XX problems solved XX/XX/2026)
