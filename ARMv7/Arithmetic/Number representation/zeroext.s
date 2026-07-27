@@ -7,5 +7,5 @@ _start:
 
 // A function to zero extend. Only this part will be tested.
 zeroext:
-	  and r0,r0,#0xFF
+	and r0,r0,#0xFF
     bx lr
