@@ -10,31 +10,22 @@ _start:
 
 // Return the difference between max and min array elements
 peak:
-	ldr r2, [r1]          // r2 = max
-    mov r3, r2            // r3 = min
-    sub r0, r0, #1
+	ldr r2, [r1], #4    
+    mov r3, r2          
+    mov r12, r2         
+    subs r0, r0, #1     
+    beq done            
 
 loop:
-    cmp r0, #0
-    beq done
-
-    add r1, r1, #4
-    ldr r4, [r1]
-
-    cmp r4, r2
-    ble check_min
-    mov r2, r4
-
-check_min:
-    cmp r4, r3
-    bge next
-    mov r3, r4
-
-next:
-    sub r0, r0, #1
-    b loop
+    ldr r2, [r1], #4    
+    cmp r2, r3          
+    movgt r3, r2        
+    cmp r2, r12          
+    movlt r12, r2       
+    subs r0, r0, #1     
+    bne loop            
 
 done:
-    sub r0, r2, r3
+    sub r0, r3, r12     
     bx lr
 	
