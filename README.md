@@ -5,7 +5,7 @@
   </a>
 </p>
 
-This repository contains my solutions to XXXX of the problems of the ASMBits Assembly problem set.<br>
+This repository contains my solutions to the ASMBits Assembly problem set.<br>
 
 ## Contributors
-Michele Missiroli - username: @michelemi (XX/XX problems solved XX/XX/2026)
+Michele Missiroli - username: @michelemi (110/110 problems solved 12/09/2026)
